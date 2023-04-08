@@ -244,7 +244,7 @@ function AppelAgent5() {
     $('.intro2').css("display", "none")
     $('.cadre').css("display", "flex")
     $('.img0').css({ 'content': "url(" + agents.data[4].bustPortrait + ") " });
-    $('.fondimage').attr("src", "Image/CHAMBER.png");
+    $('.fondimage').attr("src", "Image/CHAM.png");
     $('#div1').text(agents.data[4].displayName)
     $("#message").text(agents.data[4].abilities[0].description)
     $("#message2").text(agents.data[4].abilities[1].description)
@@ -620,7 +620,7 @@ function AppelAgent14() {
     $('.intro2').css("display", "none")
     $('.cadre').css("display", "flex")
     $('.img0').css({ 'content': "url(" + agents.data[14].bustPortrait + ") " });
-    $('.fondimage').attr("src", "Image/ASTRA.png");
+    $('.fondimage').attr("src", "Image/AST.png");
     $('#div1').text(agents.data[14].displayName)
     $("#message").text(agents.data[14].abilities[0].description)
     $("#message2").text(agents.data[14].abilities[1].description)
