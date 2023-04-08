@@ -1,0 +1,1007 @@
+/* Place tout les element sans marge ni padding */
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+body {
+    background-color: black;
+    /* overflow permeet de rogner la zone de remplissage et de ne faire apparaitre aucune barre de defilement*/
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+/*Menu de Navigation*/
+
+
+nav {
+    /* position absolute permet de pouvoir donner une valeur et placer les objets suivant le positionement voulu*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index permet de donner un etalonnage a l'objet pour pouvoir le superposé sur d'autre*/
+    z-index: 1;
+}
+
+main {
+    width: 100%;
+    /* line-height definit la distance entre les lignes de texte*/
+    line-height: 2rem;
+    font-size: 20px;
+    height: 100vh;
+    /*overflow  définit comment gérer le dépassement du contenu*/
+    overflow: auto;
+    padding: 2rem 10vw;
+}
+
+#nav-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+    display: none;
+}
+
+#nav-wrapper.active {
+    display: block;
+}
+
+#nav-close {
+    margin-bottom: 4rem;
+}
+
+.nav-links {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.nav-link {
+
+    font-size: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(16, 24, 35);
+}
+
+.nav-latteral {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    height: 100%;
+    /* Le transition permet  de contrôler la vitesse d'animation*/
+    transition: all 0.1s ease;
+    z-index: 4;
+    left: -100%;
+}
+
+.nav-link:hover {
+    color: rgb(255, 70, 84);
+
+}
+
+a:hover {
+    color: rgb(255, 70, 84);
+}
+
+.nav-link ion-icon {
+    margin-right: 10px;
+}
+
+.nav-link,
+.nav-button {
+    transition: all 0.2s ease;
+}
+
+.nav-button {
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0%;
+}
+
+.nav-button:hover {
+    color: rgb(255, 70, 84);
+    background-color: #dedede;
+
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+}
+
+.foot {
+    color: rgb(16, 24, 35);
+}
+
+/* Image de l'animation de départ de l'index*/
+
+.image1 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image2 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image3 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image4 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image5 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image6 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image7 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image8 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image9 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image10 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image11 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image12 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image13 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image14 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image15 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image16 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image17 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.image18 {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+/* Intro titre et selection*/
+
+
+#div1 {
+    font-weight: bold;
+}
+
+.intro {
+    margin-left: 200px;
+    margin-top: 300px;
+    font-size: 10em;
+    color: rgb(16, 24, 35);
+    font-weight: bold;
+    position: absolute;
+}
+
+.intro2 {
+    margin-left: 100px;
+    margin-top: 450px;
+    font-size: 7em;
+    color: rgb(255, 70, 84);
+    text-align: right;
+    position: absolute;
+}
+
+.intro3 {
+    position: absolute;
+    color: rgb(0, 2, 31);
+}
+
+.introresp {
+    font-size: 2em;
+    display: none;
+    color: rgb(16, 24, 35);
+    font-weight: bold;
+    padding-top: 130px;
+    text-align: center;
+}
+
+.intro2resp {
+    font-size: 2em;
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: rgb(255, 70, 84);
+
+}
+
+/* Les cadres et les fonds utilisé dans mes pages Agent Maps Weapons*/
+
+.cadre {
+    margin-top: 100px;
+    display: none;
+}
+
+.fondcadre {
+    background-image: url(Image/fondcadre.png);
+    background-repeat: no-repeat;
+}
+
+.fondcadre2 {
+    background-image: url(Image/fondcadre3.png);
+    background-repeat: no-repeat;
+}
+
+#buttongroup {
+    display: flex;
+    opacity: 0;
+}
+
+.nameagent {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+.descriptionagent {
+    border: 1px solid rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+/* Les images appelé par l'api*/
+
+.img0 {
+    width: 600px;
+    height: 600px;
+    z-index: 2;
+    position: absolute;
+    background-size: cover;
+
+}
+
+.img1 {
+    width: 650px;
+    height: auto;
+    margin-top: 100px;
+    z-index: 2;
+    position: absolute;
+}
+
+.map1 {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.weapon1 {
+    display: none;
+    background-size: cover;
+}
+
+.fondimage {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Les messages appelé par l'api dans mes pages Agent Map Weapon*/
+
+#message {
+    color: rgb(255, 70, 84);
+    display: none;
+}
+
+#message2 {
+    color: rgb(255, 70, 84);
+    display: none;
+}
+
+#message3 {
+    color: rgb(255, 70, 84);
+    display: none;
+}
+
+#message4 {
+    color: rgb(255, 70, 84);
+    display: none;
+}
+
+#message5 {
+    color: rgb(255, 70, 84);
+    display: none;
+}
+
+#message6 {
+    color: rgb(255, 70, 84);
+    display: none;
+}
+
+/*message personalisé pour les armes */
+
+#message12 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(16, 24, 35);
+    margin: 1px 0 0 1px;
+
+}
+
+/*class permettant la rotation de mes boutons */
+
+.rotate {
+    transition: all .5s linear;
+}
+
+.rotate.down {
+    transform: rotate(180deg);
+}
+
+/*place mes boutons a droite du tableau */
+
+.icon {
+    float: right;
+}
+
+/*Mise en page formulaire contact*/
+
+.contact {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(240, 240, 240);
+}
+
+
+.ctn1 {
+    padding-bottom: 300px;
+}
+
+@media screen and (min-width: 740px) and (max-width: 1060px){
+
+    .formcol{
+        flex-direction: column;
+    }
+
+    body {
+        background-image: url(Image/4890914.jpg);
+    }
+
+    #buttongroup {
+        flex-direction: column;
+    }
+
+    .fondcadre3{
+        flex-direction: column;
+    }
+    .cadre{
+        flex-direction: column;
+    }
+    .img0 {
+        max-width: 100%;
+        height: auto;
+        background-size: cover;
+        position: relative;
+    }
+
+    .img1 {
+        max-width: 100%;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .map1 {
+        display: none;
+    }
+
+    .intro {
+        display: none;
+    }
+
+    .intro2 {
+        display: none;
+    }
+
+    .intro3 {
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .fondimage {
+        display: none;
+    }
+
+    .image1 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image2 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image3 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image4 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image5 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image6 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image7 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image8 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image9 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image10 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image11 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image12 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image13 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image14 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image15 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image16 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image17 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image18 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .intro3 {
+        flex-direction: column;
+    }
+
+    .introresp {
+        display: block;
+        font-size: 4em;
+        padding-top:100px ;
+        padding-bottom: 100px;
+       
+
+    }
+
+    .intro2resp {
+        display: block;
+        font-size: 4em;
+    
+
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 380px) and (max-width: 760px) {
+
+    .formcol{
+        flex-direction: column;
+    }
+
+
+    body {
+        background-image: url(Image/4890914.jpg);
+    }
+
+    #buttongroup {
+        flex-direction: column;
+    }
+
+    .fondcadre3{
+        flex-direction: column;
+    }
+    .cadre{
+        flex-direction: column;
+    }
+    .img0 {
+        max-width: 100%;
+        height: auto;
+        background-size: cover;
+        position: relative;
+    }
+
+    .img1 {
+        max-width: 100%;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .map1 {
+        display: none;
+    }
+
+    .intro {
+        display: none;
+    }
+
+    .intro2 {
+        display: none;
+    }
+
+    .intro3 {
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .fondimage {
+        display: none;
+    }
+
+    .image1 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image2 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image3 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image4 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image5 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image6 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image7 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image8 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image9 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image10 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image11 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image12 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image13 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image14 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image15 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image16 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image17 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .image18 {
+        width: 0px;
+        height: 0px;
+    }
+
+    .intro3 {
+        flex-direction: column;
+    }
+
+    .introresp {
+        display: block;
+        font-size: 2em;
+        padding-top:20px ;
+        padding-bottom: 20px;
+       
+
+    }
+
+    .intro2resp {
+        display: block;
+        font-size: 2em;
+    
+
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 380px){
+
+    .introresp {
+        display: none;
+    }
+
+    .intro2resp {
+        display: none;    
+}
+
+body {
+    background-image: url(Image/4890914.jpg);
+}
+
+#buttongroup {
+    flex-direction: column;
+}
+
+.fondcadre3{
+    flex-direction: column;
+}
+.cadre{
+    flex-direction: column;
+}
+.img0 {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    position: relative;
+}
+
+.img1 {
+    max-width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    position: relative;
+}
+
+.map1 {
+    display: none;
+}
+
+.intro {
+    display: none;
+}
+
+.intro2 {
+    display: none;
+}
+
+.intro3 {
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 20px;
+}
+
+.fondimage {
+    display: none;
+}
+
+.image1 {
+    width: 0px;
+    height: 0px;
+}
+
+.image2 {
+    width: 0px;
+    height: 0px;
+}
+
+.image3 {
+    width: 0px;
+    height: 0px;
+}
+
+.image4 {
+    width: 0px;
+    height: 0px;
+}
+
+.image5 {
+    width: 0px;
+    height: 0px;
+}
+
+.image6 {
+    width: 0px;
+    height: 0px;
+}
+
+.image7 {
+    width: 0px;
+    height: 0px;
+}
+
+.image8 {
+    width: 0px;
+    height: 0px;
+}
+
+.image9 {
+    width: 0px;
+    height: 0px;
+}
+
+.image10 {
+    width: 0px;
+    height: 0px;
+}
+
+.image11 {
+    width: 0px;
+    height: 0px;
+}
+
+.image12 {
+    width: 0px;
+    height: 0px;
+}
+
+.image13 {
+    width: 0px;
+    height: 0px;
+}
+
+.image14 {
+    width: 0px;
+    height: 0px;
+}
+
+.image15 {
+    width: 0px;
+    height: 0px;
+}
+
+.image16 {
+    width: 0px;
+    height: 0px;
+}
+
+.image17 {
+    width: 0px;
+    height: 0px;
+}
+
+.image18 {
+    width: 0px;
+    height: 0px;
+}
+
+.intro3 {
+    flex-direction: column;
+}
+
+}
